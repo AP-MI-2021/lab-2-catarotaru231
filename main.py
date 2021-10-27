@@ -21,10 +21,10 @@ def test_get_newton_sqrt():
 
 def perfect_squares():
     print("Capetele intervalului sunt")
-    x = int(input())
-    y = int(input())
+    x = int(input("x = "))
+    y = int(input("y = "))
     get_perfect_squares(x, y)
-    print("Numerele din intervalul", x, "si", y, "care sunt patrate perfecte sunt:")
+    print("Numerele din intervalul [",x, ",", y,"] care sunt patrate perfecte sunt:")
     print(get_perfect_squares(x,y))
 
 def get_perfect_squares(x, y):
@@ -46,8 +46,8 @@ def test_get_perfect_squares():
 
 
 def show_menu():
-    print("""
-1.Execută un număr dat de pași pentru a calcula radicalul unui număr dat folosind metoda lui Newton cu `x0=2` și afișează aproximarea obținută.
+    print("""1.Execută un număr dat de pași pentru a calcula radicalul unui număr dat folosind metoda lui Newton cu `x0=2`
+și afișează aproximarea obținută.
 2.Afișează toate patratele perfecte dintr-un interval închis dat.
 Apasati x pentru a iesi din meniu
     """)
